@@ -1,4 +1,46 @@
-# Getting Started with Create React App
+# CoinHub
+
+A cryptocurrency website that shows information of 100 cryptocurrencies and shows the latest news regarding crypto
+
+## Live Preview
+
+[**Link to Website**](https://amazingcryptonewswebsite.netlify.app/)
+
+## Built with
+
+- HTML
+- SASS
+- TypeScript
+- React
+- Redux Toolkit
+- ChartJS
+
+## Description
+
+This project has the following features:
+
+- View the information of 100 cryptocurrencies through Coinranking API
+- View a line graph of a selected cryptocurrency using the information from Coinranking API and created with ChartJS
+- View the latest news of cryptocurrency through Bing News Search API
+
+## Outcomes of this project/Summary
+
+- Better understanding of UI/UX Design
+- Understand of how to fetch data through Redux Toolkit
+- Improved understanding of TypeScript
+- Better understanding of creating charts through chartJS
+
+## In order to run this code locally
+
+1. Make sure to get your own api keys. The api used in this project can be found here.
+[**Link to crypto api**](https://rapidapi.com/Coinranking/api/coinranking1/)
+[**Link to news search api**](hhttps://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-news-search1?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=DevRel&utm_campaign=DevRel)
+
+2. Create a .env folder in the root of the project
+
+3. Have fun with the project
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

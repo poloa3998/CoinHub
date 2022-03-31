@@ -33,12 +33,11 @@ This project has the following features:
 ## In order to run this code locally
 
 1. Make sure to get your own api keys. The api used in this project can be found here.
-[**Link to crypto api**](https://rapidapi.com/Coinranking/api/coinranking1/)
-[**Link to news search api**](hhttps://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-news-search1?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=DevRel&utm_campaign=DevRel)
-
 2. Create a .env folder in the root of the project
-
 3. Have fun with the project
+
+- [**Link to crypto api**](https://rapidapi.com/Coinranking/api/coinranking1/)
+- [**Link to news search api**](hhttps://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-news-search1?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=DevRel&utm_campaign=DevRel)
 
 ## Getting Started with Create React App
 

@@ -2,6 +2,8 @@
 
 A cryptocurrency website that shows information of 100 cryptocurrencies and shows the latest news regarding crypto
 
+![alt text](https://user-images.githubusercontent.com/86901273/161145194-e2069569-7328-4d2d-8c72-394013412bdd.png)
+
 ## Live Preview
 
 [**Link to Website**](https://amazingcryptonewswebsite.netlify.app/)

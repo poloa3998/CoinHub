@@ -37,7 +37,7 @@ This project has the following features:
 3. Have fun with the project
 
 - [**Link to crypto api**](https://rapidapi.com/Coinranking/api/coinranking1/)
-- [**Link to news search api**](hhttps://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-news-search1?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=DevRel&utm_campaign=DevRel)
+- [**Link to news search api**](https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-news-search1?utm_source=youtube.com%2FJavaScriptMastery&utm_medium=DevRel&utm_campaign=DevRel)
 
 ## Getting Started with Create React App
 

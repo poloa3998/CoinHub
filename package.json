@@ -1,8 +1,9 @@
 {
-  "name": "crypt-fo",
+  "name": "coinhub",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^1.8.0",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
@@ -10,9 +11,25 @@
     "@types/node": "^16.11.26",
     "@types/react": "^17.0.41",
     "@types/react-dom": "^17.0.14",
+    "axios": "^0.26.1",
+    "chart.js": "^3.7.1",
+    "chartjs-adapter-luxon": "^1.1.0",
+    "html-react-parser": "^1.4.9",
+    "javascript-time-ago": "^2.3.13",
+    "lottie-react": "^2.2.1",
+    "luxon": "^2.3.1",
+    "millify": "^4.0.0",
     "react": "^17.0.2",
+    "react-chartjs-2": "^4.0.1",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-loader-spinner": "^6.0.0-0",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
+    "react-slick": "^0.28.1",
+    "react-time-ago": "^7.1.9",
+    "slick-carousel": "^1.8.1",
     "typescript": "^4.6.2",
     "web-vitals": "^2.1.4"
   },
@@ -39,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/react-slick": "^0.23.8"
   }
 }

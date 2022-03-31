@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", san-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+.welcome-left {
+  width: 50%;
+}
+
+.headline {
+  font-size: 2.5rem;
+}
+
+.statement {
+  width: 80%;
+  color: var(--text-secondary);
+}
+
+.get-started {
+  background-color: #2688f8;
+  color: white;
+  width: 10rem;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  transform: scale(1);
+  transition: 0.1s ease-in-out;
+}
+
+.get-started:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: #177ff5;
+}
+
+.get-started:active {
+  transform: scale(1);
+  transition: 0.1s ease-in-out;
+}
+
+.lottie {
+  width: 30rem;
+}
+
+/* The typewriter cursor effect */
+@-webkit-keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+@media (max-width: 1024px) {
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", san-serif;
+  }
+
+  .welcome-left {
+    text-align: center;
+    width: 75%;
+  }
+
+  .statement {
+    width: 100%;
+  }
+
+  .lottie {
+    width: 50%;
+    padding-right: 1rem;
+    min-width: 20rem;
+  }
+}
+@media (max-width: 500px) {
+  .headline {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=Welcome.css.map */

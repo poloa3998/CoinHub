@@ -1,0 +1,65 @@
+@use "../variables/variables.scss";
+
+.welcome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: variables.$NavFont;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+.welcome-left {
+  width: 50%;
+}
+
+.headline {
+  font-size: 2.5rem;
+}
+
+.statement {
+  width: 80%;
+  color: var(--text-secondary);
+}
+
+.lottie {
+  width: 30rem;
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+//Mobile view
+@media (max-width: 1024px) {
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $NavFont;
+  }
+  .welcome-left {
+    text-align: center;
+    width: 75%;
+  }
+  .statement {
+    width: 100%;
+  }
+  .lottie {
+    width: 50%;
+    padding-right: 1rem;
+    min-width: 20rem;
+  }
+}
+
+//Mobile view
+@media (max-width: 500px) {
+  .headline {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.newsCard {
+  background: var(--background);
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: var(--card-box-shadow);
+  transform: scale(1);
+  transition: 0.1s ease-in-out;
+  max-width: 85%;
+}
+
+.newsCard:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.newsCard:active {
+  transform: scale(1);
+  transition: 0.1s ease-in-out;
+}
+
+.news-left {
+  display: flex;
+  gap: 1rem;
+}
+
+.newsName {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.newsImg {
+  width: 100%;
+}
+
+.sourceProvider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+time {
+  color: var(--text-primary);
+}
+
+.sourceImg {
+  width: 2.5rem;
+  border-radius: 100%;
+}
+
+.description {
+  color: var(--text-primary);
+}
+
+.slick-track {
+  margin: 1rem;
+}
+
+.slick-slider {
+  width: 80vw;
+}
+
+.slick-dots {
+  position: static;
+  color: white;
+}
+
+.description.slider {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.newsCard.slider {
+  max-width: 75%;
+}
+
+.newsImg.slider {
+  width: 100%;
+}
+
+.sourceProvider.slider p {
+  width: 100%;
+}
+
+.news {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background--secondary);
+  color: var(--text-primary);
+  padding: 1rem 0 1rem 0;
+}
+
+.news-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--background--secondary);
+  color: var(--text-primary);
+}
+
+.newsCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin: 1rem 2rem 1rem 6rem;
+  padding-bottom: 1rem;
+}
+
+.sourceProvider p {
+  width: 50%;
+  color: var(--text-primary);
+}
+
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  margin: 0 0 1.5rem 1rem;
+  border-radius: 5px;
+  width: 12rem;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+.search-wrapper:hover {
+  outline: 1px solid rgb(38, 136, 248);
+  cursor: text;
+}
+
+.search-wrapper:focus-within {
+  outline: 1px solid rgb(38, 136, 248);
+}
+
+.newsSearchBar {
+  border: none;
+  outline: none;
+  background-color: var(--background);
+  color: var(--text-primary);
+}
+
+.newsSearchBar::-moz-placeholder {
+  color: var(--text-secondary);
+}
+
+.newsSearchBar:-ms-input-placeholder {
+  color: var(--text-secondary);
+}
+
+.newsSearchBar::placeholder {
+  color: var(--text-secondary);
+}
+
+.icon {
+  color: var(--icon);
+  width: 1rem;
+  height: 1rem;
+}
+
+.option-wrapper {
+  position: absolute;
+  top: 2.2rem;
+  left: 0.1rem;
+  background-color: var(--background);
+  width: 13.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 15rem;
+  overflow-y: scroll;
+  z-index: 1;
+  box-shadow: 4px 8px 11px -6px #000000;
+  border-radius: 5px;
+}
+
+.option-wrapper button {
+  display: flex;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: var(--text-primary);
+}
+
+.option-wrapper button:hover {
+  background-color: rgba(189, 189, 189, 0.25);
+  cursor: pointer;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .newsCard {
+    width: 80%;
+  }
+
+  .news-wrapper {
+    margin-right: 1rem;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4.5rem;
+    gap: 2rem;
+    width: 22rem;
+  }
+
+  .sourceProvider {
+    font-size: 0.8rem;
+  }
+
+  .sourceProvider p {
+    width: 40%;
+  }
+}
+@media (max-width: 280px) {
+  .newsCards {
+    font-size: 0.7rem;
+    max-width: 15rem;
+  }
+
+  .sourceProvider {
+    font-size: 0.6rem;
+  }
+
+  .sourceProvider p {
+    width: 25%;
+    margin-right: 1rem;
+  }
+
+  .sourceProvider img {
+    width: 15%;
+  }
+}/*# sourceMappingURL=News.css.map */

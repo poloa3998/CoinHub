@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+import Nav from "./components/Nav";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./App.css";
+import Home from "./pages/Home";
+import Cryptocurrencies from "./pages/Cryptocurrencies";
+import News from "./pages/News";
+import CryptoDetails from "./pages/CryptoDetails";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
+  const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const [theme, setTheme] = useState<string>(defaultDark ? "dark" : "light");
+  localStorage.setItem("theme", theme);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter basename="/">
+      <div className="app" data-theme={theme}>
+        <Nav theme={theme} setTheme={setTheme} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
+          <Route path="/news" element={<News simple={false} />} />
+
+          <Route path="/crypto/:coinId" element={<CryptoDetails />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

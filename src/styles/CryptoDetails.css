@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.cryptoDetails {
+  background-color: var(--background--secondary);
+}
+
+.cryptoHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  margin: 0 2rem 2rem 2rem;
+  color: rgb(38, 136, 248);
+  border-bottom: 1px solid rgba(85, 85, 85, 0.233);
+  gap: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.cryptoHeader img {
+  width: 4rem;
+}
+
+.statistics {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  color: var(--text-primary);
+}
+
+.statistics h3 {
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  color: rgb(38, 136, 248);
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(139, 138, 138, 0.233);
+}
+
+.stat-left {
+  display: flex;
+  gap: 1rem;
+}
+
+.cryptoDescription {
+  margin: 2rem 5rem 2rem 5rem;
+}
+
+.cryptoDescription h2,
+.cryptoDescription h3,
+.cryptoDescription a {
+  color: rgb(38, 136, 248);
+}
+
+.cryptoDescription h2 {
+  font-size: 2rem;
+}
+
+.cryptoDescription h3 {
+  font-size: 1.5rem;
+}
+
+.cryptoDescription p {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+
+.links-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-primary);
+}
+
+.links-section h2 {
+  font-size: 2rem;
+  color: rgb(38, 136, 248);
+}
+
+.cryptoLinks {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.cryptoLink {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(139, 138, 138, 0.233);
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.cryptoLink:hover {
+  background-color: var(--background);
+}
+
+.cryptoLink a {
+  color: rgb(38, 136, 248);
+}
+
+.cryptoLink p::first-letter {
+  text-transform: capitalize;
+}
+
+.graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2.5rem;
+}
+
+.graph-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background);
+  color: var(--text-primary);
+  border-radius: 10px;
+  border: 1px solid rgba(191, 192, 192, 0.527);
+  box-shadow: rgba(0, 0, 0, 0.25) 0 2px 2px 0;
+  width: 75%;
+}
+
+.timePeriod-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.period-button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.period-button:hover {
+  background-color: inherit;
+  color: rgb(38, 136, 248);
+}
+
+.period-button.active {
+  padding: 0.2rem 0.5rem 0.2rem 0.5rem;
+  background-color: rgb(38, 136, 248);
+  color: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  .statistics {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .cryptoHeader {
+    font-size: 0.8rem;
+    gap: 0.5rem;
+  }
+
+  .cryptoHeader img {
+    width: 3rem;
+  }
+
+  .cryptoDescription {
+    text-align: center;
+    margin: 0 1.5rem 0 1.5rem;
+  }
+
+  .cryptoLinks h2 {
+    text-align: center;
+  }
+
+  .statistics {
+    padding: 1.5rem;
+  }
+
+  .graph {
+    padding: 1rem;
+  }
+
+  .graph-wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  .cryptoDetails {
+    font-size: 0.8rem;
+  }
+
+  .cryptoDescription h2 {
+    font-size: 1.5rem;
+  }
+
+  .cryptoDescription h3 {
+    font-size: 1rem;
+  }
+
+  .cryptoDescription p {
+    font-size: 0.8rem;
+  }
+
+  .cryptoLinks h2 {
+    font-size: 1.5rem;
+  }
+
+  .cryptoLink a {
+    width: 55%;
+  }
+}/*# sourceMappingURL=CryptoDetails.css.map */

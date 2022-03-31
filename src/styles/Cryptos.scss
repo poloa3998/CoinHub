@@ -1,0 +1,154 @@
+@use "../variables/variables.scss";
+.cryptos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 60%;
+  padding-bottom: 1rem;
+}
+
+.crypto {
+  background-color: var(--background);
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: var(--card-box-shadow);
+  transform: scale(1);
+  transition: 0.1s ease-in-out;
+}
+
+.crypto:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.crypto:active {
+  transform: scale(1);
+  transition: 0.1s ease-in-out;
+}
+
+.cryptoImg {
+  width: 4rem;
+}
+.cryptoName {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: variables.$blue;
+}
+.cryptoPrice {
+  color: var(--text-secondary);
+}
+.cryptoChange-wrapper {
+  display: flex;
+  align-items: center;
+}
+.arrow {
+  width: 2rem;
+  height: 2.5rem;
+}
+.increasing,
+.decreasing {
+  font-size: 1.5rem;
+}
+.decreasing {
+  color: rgb(209, 35, 35);
+}
+.increasing {
+  color: rgb(5, 158, 51);
+}
+//Mobile view
+@media (max-width: 1024px) {
+  .cryptoSection {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+  }
+  .cryptoSection-left {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .cryptos {
+    gap: 3rem;
+    width: 80%;
+  }
+  .crypto {
+    width: 90%;
+  }
+  .cryptoImg {
+    width: 2rem;
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--background--secondary);
+}
+
+.searchBar {
+  width: 30%;
+  padding: 0.5rem;
+  border-radius: 10px;
+  background-color: var(--background);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  margin: 0 1rem 1rem 1rem;
+  outline: none;
+}
+
+.searchBar:focus {
+  outline: 1px solid variables.$blue;
+}
+.searchBar::placeholder {
+  color: var(--text-secondary);
+}
+@media (max-width: 768px) {
+  .cryptos {
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    justify-items: center;
+    gap: 3rem;
+  }
+  .cryptoSection-left {
+    width: 80%;
+  }
+
+  .crypto {
+    width: 100%;
+  }
+  .searchBar {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .cryptos {
+    gap: 1rem;
+    width: 90%;
+  }
+  .crypto {
+    padding: 0.5rem;
+    width: 90%;
+  }
+
+  .increasing,
+  .decreasing {
+    width: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .cryptos {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
